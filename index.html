@@ -1,0 +1,56 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Ninja Switches</title>
+  
+  <link rel="stylesheet" href="themes/NinjaSwitches.min.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+  <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div data-role="header" id="header">
+    <button id="b-cancel" data-icon="back" data-iconpos="left" data-inline="true" data-mini="true">Cancel</button>
+    <button id="b-submit" data-theme="b" data-icon="check" data-iconpos="right" data-inline="true" data-mini="true">Save</button>
+    <h1>Ninja Switches</h1>
+  </div>
+<button type="button" data-icon="plus" data-iconpos="right" data-mini="true" data-inline="true" id="add">Add</button>
+<div role="main" class="ui-content">
+  <form id="configuration-form">
+    <ul id="list" class="touch" data-role="listview" data-icon="false">
+      <div data-role="collapsibleset" data-content-theme="a" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" data-iconpos="left" id="set">
+      <!--<li>
+	<div data-role="collapsible" id="set0" data-collapsed="true">
+	  <h3 class="ui-btn-text" id="dynamicName">Menu Item 1</h3>
+	  <div class="ui-field-contain"><label class="forName" for="name0">Name</label><input type="text" class=name name="name0" id="name0" value="" maxlength="15" data-clear-btn="true"><label class="forWeb" for="webaddress0">Web Request</label><input type="text" class=webaddress name="webaddress0" id="webaddress0" value="" data-clear-btn="true"><a href="#" class="delete ui-btn" title="Delete">Delete</a>
+	</div>
+	</div>
+      </li>-->
+      </div>
+    </ul>
+  </form>
+    <br />
+      <button id="b-save" data-theme="b" data-icon="check" data-iconpos="right">Save</button>
+</div>
+</body>
+
+<div style="display: none;" id="confirm-placeholder"><!-- placeholder for confirm --></div><!-- /popup -->
+<div class="ui-screen-hidden ui-popup-screen ui-overlay-inherit" id="confirm-screen"></div><div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="confirm-popup"><div id="confirm" class="ui-content ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-role="popup" data-theme="a" data-dismissible="false">
+        <p id="question">Are you sure you want to delete:</p>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a id="yes" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Yes</a>
+            </div>
+            <div class="ui-block-b">
+                <a id="cancel" class="ui-btn ui-corner-all ui-mini ui-btn-a" data-rel="back">Cancel</a>
+            </div>
+        </div>
+    </div></div>
+</html>
