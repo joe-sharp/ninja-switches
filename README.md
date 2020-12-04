@@ -1,2 +1,6 @@
 # ninja-switches
-Defunct web application used to configure a Pebble watch to make HTTP requests
+### Defunct web application used to configure a Pebble watch to make HTTP requests
+
+This was one of the first programming projects I wrote for my personal use back in 2013. This portion of the application ran inside of webkit within the iOS or Android application from Pebble. (A discontinued smart watch.) It was used to configure the application I wrote for the Pebble itself. A user would use this application to name and configure URLs to make HTTP requests to. Then from the watch, the user can open the application and select any of the named webhooks to fire off the request. In my personal use of the application I configured my Pebble watch with webhooks that could toggle lights in my house. I used this application daily for several years until I eventually switched to a new smart watch. I decided to upload this code here for historical purposes. If it wasn't clear already this application is not functional in its current state, it is only capable of remembering what selections you have made. Clicking `Save` or `Cancel` will fail to do anything useful.
+
+Random Fact: The name Ninja Switches came from the home automation server I wrote it to work with. (Ninja Blocks, also discontinued now.)
